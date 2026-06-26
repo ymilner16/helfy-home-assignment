@@ -8,5 +8,5 @@ To run the app, simply clone and run the following:
 ```
 docker compose up --build
 ```
-The app will then run on localhost:3000
+The app will then run on localhost:3000 <br>
 The logs will appear on your console.
