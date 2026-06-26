@@ -9,4 +9,12 @@ To run the app, simply clone and run the following:
 docker compose up --build
 ```
 The app will then run on localhost:3000 <br>
-The logs will appear on your console.
+The logs will appear on your console. <br>
+There are two test users:
+```
+username: test
+password: test
+
+username: test2
+password: test2
+```
