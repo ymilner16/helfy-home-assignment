@@ -1,0 +1,32 @@
+<head>
+    <title>Login Page</title>
+</head>
+<body>
+    <h2>Login</h2>
+    <form id="login">
+        <input type="user" id="user" placeholder="User" required><br><br>
+        <input type="password" id="password" placeholder="Password" required><br><br>
+        <button type="submit">Log In</button>
+    </form>
+    <p id="msg" style="font-weight: bold;"></p>
+    <script>
+        document.getElementById('login').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const user = document.getElementById('user').value;
+            const password = document.getElementById('password').value;
+            const res = await fetch('/api/login', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ user, password })
+            });
+            const data = await res.json();
+            if (res.ok) {
+                document.getElementById('msg').innerText = `Login successful! Token: ${data.token}`;
+                localStorage.setItem('token', data.token);
+            }
+            else {
+                document.getElementById('msg').innerText = `Login failed: ${data.message}`;
+            }
+        })
+    </script>
+</body>

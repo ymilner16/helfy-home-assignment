@@ -1,0 +1,12 @@
+{
+  "name": "kafka-consumer",
+  "version": "1.0.0",
+  "description": "Real-time CDC Consumer from Kafka",
+  "main": "consumer.js",
+  "scripts": {
+    "start": "node consumer.js"
+  },
+  "dependencies": {
+    "kafkajs": "^2.2.4"
+  }
+}

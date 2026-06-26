@@ -1,0 +1,14 @@
+{
+  "name": "backend-api",
+  "version": "1.0.0",
+  "description": "Node.js API backend with log4js logging",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "log4js": "^6.9.1",
+    "mysql2": "^3.9.7"
+  }
+}
