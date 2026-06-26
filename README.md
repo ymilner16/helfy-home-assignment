@@ -6,5 +6,7 @@ An end-to-end event driven architecture featuring a Node.js backend, database pe
 ## Running the app
 To run the app, simply clone and run the following:
 ```
-docker compose up --build -d
+docker compose up --build
 ```
+The app will then run on localhost:3000
+The logs will appear on your console.
